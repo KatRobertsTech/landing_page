@@ -1,0 +1,12 @@
+body {
+    background-color: white;
+}
+
+header {
+    background-color: pink;
+    height: 120px;
+}
+
+nav {
+    display: inline-block;
+}
