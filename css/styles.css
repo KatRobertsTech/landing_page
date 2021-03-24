@@ -27,26 +27,29 @@ a {
 /* Header ==================================== */
 header {
     background-color: pink;
+    height: 66px;
 }
 nav {
     background-color: blue;
-    padding: 10px;
+    /* padding: 10px; */
     display: flex;
+    flex-direction: row;
 }
 .fas {
     position: static;
+    font-size: 2em;
 }
 .menu {
     background-color: orange;
-    width: 10%;
-    height: 10vW;
-    position: absolute;
     text-align: center;
+    position: absolute;
+    padding: 10px 15px;
 }
 .logo {
     background-color: pink;
     width: 100%;
     text-align: center;
+    padding: 10px;
 }
 
 nav ul {
@@ -55,9 +58,31 @@ nav ul {
     margin: 0;
 }
 
+nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
 nav.flexbox {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+img.cotton {
+    margin-right: 10px;
+    height: 1.25em;
+}
+.logo li {
+    font-family: 'Domine', serif;
+    font-weight: 500;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
 }
 
 /* Main ==================================== */
