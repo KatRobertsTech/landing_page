@@ -9,21 +9,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Domine:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     
-    <header class="header">
-        <nav class="flexbox">
-            <div class="menu">
-                <a href=""><i class="fas fa-bars"></i></a>
-            </div>
-            <div class="logo">
-                <ul>
-                    <li><img class="cotton" src="img/cotton-fabric-24px.svg" alt=""><a href="">Flowerli</a></li>
-                </ul>
-            </div>    
-
-        </nav>        
+    <header class="header container">
+            <nav class="flexbox">
+                <div class="menu">
+                    <a href=""><i class="fas fa-bars"></i></a>
+                </div>
+                <div class="logo">
+                    <ul>
+                        <li><img class="cotton" src="img/cotton-fabric-24px.svg" alt=""><a href="">Flowerli</a></li>
+                    </ul>
+                </div>    
+            </nav>   
     </header>    
     
     
@@ -45,76 +46,102 @@
                 </nav> -->    
 
     <main>
-        <div class="hero ">
-            <div class="cat">
-                <img src="" alt="">
-                <h1 class="business-name">Flowerli</h1>
-                <h2>Learn Flower Arrangement...</h2>
-                <a href="">Find Out More!</a>
+        <div class="container">
+            <div class="hero">
+                <div class="cat">
+                    <img src="" alt="">
+                    <h1 class="display-none-mobile">Flowerli</h1>
+                    <h2>Learn Flower Arrangement...</h2>
+                    <div class="button-div">
+                        <a href="" class="find-out-more button">Find Out More!</a>
+                    </div>    
+                </div>
+                <div class="sign-up-form">
+                    <p class="display-none-mobile">Be first to find out more about our amazing flower arrangement courses and offers. Get empowered by selling your creations localy in our online shop.</p>
+                    <p>Flower arrangement courses and offers.</p>
+                    <form action="">
+                        <input type="text" placeholder="Enter your email">
+                        <button class="button">Sign Me Up!</button>
+                    </form>
+                </div>
             </div>
-            <div class="sign-up-form">
-                <p>Be first to find out more about our amazing flower arrangement courses and offers. Get empowered by selling your creations localy in our online shop.</p>
+            <div class="categories">
+                <h3>Customised flower arrangements</h3>
+                <span>Flowers that look gorgeous in your home</span>
+                <div class="cat-flex-cont">
+                    <div class="cat-option">
+                        <img src="img/amy-shamblen-600px-unsplash.jpg" alt="Rainbow Flower Heart Photo by Amy Shamblen">
+                        <h4>Valentine's Surprise</h4>
+                    </div>
+                    <div class="cat-option">
+                        <img src="img/amy-shamblen-600px-unsplash.jpg" alt="Rainbow Flower Heart Photo by Amy Shamblen">
+                        <h4>Gorgeous</h4>
+                    </div>
+                    <div class="cat-option">
+                        <img src="img/amy-shamblen-600px-unsplash.jpg" alt="Rainbow Flower Heart Photo by Amy Shamblen">
+                        <h4>Attractive</h4>
+                    </div>
+                    <div class="cat-option">
+                        <img src="img/amy-shamblen-600px-unsplash.jpg" alt="Rainbow Flower Heart Photo by Amy Shamblen">
+                        <h4>Elegant</h4>
+                    </div>
+                </div>    
+            </div>
+            <div class="how-it-works">
+                <h3>How it works</h3>
+                <span>Create something unique and sell it in our online shop</span>
+                <video controls width="100%">
+                    <source src="media/roses.mp4" type="video/mp4">
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+            </div>
+            <div class="sign-up-form form2">
+                <p class="display-none-mobile">Be first to find out more about our amazing flower arrangement courses and offers. Get empowered by selling your creations localy in our online shop.</p>
                 <p>Flower arrangement courses and offers.</p>
                 <form action="">
                     <input type="text" placeholder="Enter your email">
-                    <button>Sign Me Up!</button>
+                    <button class="button">Sign Me Up!</button>
                 </form>
-            </div>
-        </div>
-        <div class="categories">
-            <h3>Customised flower arrangements</h3>
-            <span>Flowers that look gorgeous in your home</span>
-            <div>
-                <!-- code cicle here -->
-                <h4>Valentine's Surprise</h4>
-            </div>
-            <div>
-                <!-- code cicle here -->
-                <h4>Gorgeous</h4>
-            </div>
-            <div>
-                <!-- code cicle here -->
-                <h4>Attractive</h4>
-            </div>
-            <div>
-                <!-- code cicle here -->
-                <h4>Elegant</h4>
-            </div>
-        </div>
-        <div class="how-it-works">
-            <h3>How it works</h3>
-            <span>Create something unique and sell it in our online shop</span>
-            <!-- Code with video here -->
-            <div class="sign-up-form">
-                <p>Be first to find out more about our amazing flower arrangement courses and offers. Get empowered by selling your creations localy in our online shop.</p>
-                <p>Flower arrangement courses and offers.</p>
-                <form action="">
-                    <input type="text" placeholder="Enter your email">
-                    <button>Sign Me Up!</button>
-                </form>
-            </div>         
-        </div>
+            </div> 
+        </div>    
     </main>
+
     <footer>
-        <div>
-            <h4>Company</h4>
-            <a href="">About Us</a>
-            <a href="">Legal Terms</a>
-        </div>
-        <div>
-            <h4>Contact Us</h4>
-            <a href="">Email</a>
-            <a href="">Phone</a>        
-        </div>
-        <div>
-            <h4>Support</h4>
-            <a href="">F&Qs</a>
-        </div>
-        <div>
-            <p>coopyright Katarina Roberts</p>
-            <a href="">www.katarinaroberts.com</a>
-        </div>
-    </footer>   
+
+        <div class="container footer">
+                <div class="top">
+                    <div class="section1">
+                        <ul>
+                            <li><h4>Company</h4></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Legal Terms</a></li>
+                        </ul>
+                    </div>  
+                </div>    
+
+                <div class="section2">
+                        <ul class>
+                            <li><h4>Contact Us</h4></li>
+                            <li><a href="">Email</a></li>
+                            <li><a href="">Phone</a></li>
+                        </ul>    
+                </div>
+
+                <div class="section3">  
+                        <ul>
+                            <li><h4>Support</h4></li>
+                            <li><a href="">F&Qs</a></li>
+                        </ul>
+                </div>      
+
+                <div class="section4">
+                    <ul>
+                        <li><p>copyright Katarina Roberts</p></li>
+                        <li><a href="https://www.katarinaroberts.com">www.katarinaroberts.com</a></li>
+                    </ul>
+                </div>    
+        </div>    
+    </footer>
     <script src="js/script.js"></script> 
 </body>
 </html>
