@@ -13,6 +13,7 @@ html {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    letter-spacing: 0.02rem;
 }
 *, *::before, *::after {
     box-sizing: inherit;
@@ -20,16 +21,51 @@ html {
 
 body {
     background-color: yellow;
+    line-height: 1.4rem;
 }
-
 a {
     color: white;
+}
+
+.cat, .sign-up-form,.categories, .how-it-works, .footer {
+    padding: 0 15px;
+}
+
+.display-none-mobile {
+    display: none;
+}
+
+h2 {
+    text-align: center;
+    margin: 2rem 0;
+    letter-spacing: 0.04rem;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-top: 1.563rem;
+}
+
+h4 {
+    text-align: center;
+    margin-top: 0.7rem;
+    margin-bottom: 1.563rem;
+}
+
+span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.188rem;
+    font-weight: 700;
 }
 
 /* Header ==================================== */
 header {
     background-color: pink;
     height: 100%;
+    border-bottom: 10px solid #FFA9D2;
 }
 nav {
     display: flex;
@@ -84,14 +120,188 @@ nav a {
     text-decoration: none;
 }
 
+
 /* Main ==================================== */
+        /* Hero ==================================== */
+.hero {
+    /* background-image: url("../img/jorge-aguilar-600px-unsplash.jpg"); */
+    background:
+    linear-gradient(
+        rgba(24, 28, 69, 0.5),
+        rgba(24, 28, 69, 0.5)
+    ),
+    url("../img/jorge-aguilar-600px-unsplash.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* font-family: 'Open Sans', sans-serif; */
+    color: white;
+
+}
+
+.hero .sign-up-form {
+    background-color: rgba(20, 19, 34, 0.6);
+}
+
+.sign-up-form p {
+    margin-top: 0;
+    margin-bottom: 0.625rem;
+    padding-top: 0.625rem;
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+button, input {
+    width: 100%;
+    height: 2.188rem;
+}
+
+form .button {
+    margin-top: 1.875rem;
+    margin-bottom: 2.188rem;
+    background-color: #7BFFD0;
+    border: 1px solid  #7BFFD0;
+}
+            /* Categories ==================================== */
+.categories{
+    background-color: #FFDA7B;
+    border-top: 10px solid #FFA9D2;
+}
+
+.categories h3 {
+    padding-top: 25px;
+    margin: 0 0 10px 0;
+}
+
+.cat-flex-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 0.938rem;
+}
+
+/* .cat-option {
+    background-color: lightsalmon;
+    width: 100px;
+    height: 100px;
+    margin: 10px 0;
+} */
+
+.cat-option {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    width: 45%
+}
 
 
-/* Footer ==================================== */
+
+.cat-option img {
+    width: 100%;
+    border-radius: 50%;
+}
+        /* How-it-works ==================================== */
+.how-it-works {
+    background-color: white;
+}  
+.how-it-works p {
+    padding-top: 0;
+}      
+video {
+    margin-top: 0.938rem;
+    margin-bottom: 0.938rem;
+}
+            /* Sign-up-form-2 ==================================== */
+.form2 {
+    background-color: white;
+}            
+
+.form2 input {
+    border: 1px solid black;
+}
+
+
+/* Footer test ==================================== */
+footer {
+    border-top: 10px solid #FFA9D2;
+}
+footer a {
+    color: black;
+}
+footer ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.section1 {
+    width: 7rem;
+}
+
+.section2 {
+    width: 7rem;
+}
+.section3 {
+    width: 7rem;
+}
+
+.section4 {
+    width: 14rem;
+    border-top: 1px dashed black;
+}
+
+.footer h4 {
+    border-bottom: 1px dashed black;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.footer li {
+    margin: 5px;
+}
+
+
 
 /* Links and Buttons ============================ */
-
+.button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    text-transform: uppercase;
+    border: 1px solid yellow;
+    padding: 5px 15px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.button-div {
+    display: flex;
+    justify-content: center;
+}
+.button-div {
+    margin-bottom: 3.75rem;
+}
 /* Containers & Columns ==================================== */
+
 
 /* Layout styling =====================================*/
 
@@ -111,3 +321,18 @@ flex-ai-c {
 
 
 /* Media Queries =====================================*/
+@media only screen and (min-width: 640px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+
+}
