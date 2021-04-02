@@ -229,6 +229,7 @@ video {
 /* Footer test ==================================== */
 footer {
     border-top: 10px solid #FFA9D2;
+    background-color: white;
 }
 footer a {
     color: black;
@@ -251,6 +252,13 @@ footer ul {
     display: flex;
     justify-content: center;
 }
+
+.bottom{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .section1 {
     width: 7rem;
 }
@@ -265,19 +273,41 @@ footer ul {
 .section4 {
     width: 14rem;
     border-top: 1px dashed black;
+    margin-top: 20px;
 }
 
 .footer h4 {
     border-bottom: 1px dashed black;
     padding-bottom: 5px;
-    margin-bottom: 5px;
+    margin: 0;
 }
 
 .footer li {
-    margin: 5px;
+    margin: 5px 0;
+}
+.footer a {
+    text-decoration: none;
 }
 
+.footer .section1 ul {
+    margin-top: 20px;
+}
 
+.footer ul {
+    margin: 5px 0;
+}
+
+.section4 ul {
+    margin-top: 0;
+}
+.section4 ul p {
+    margin: 0;
+    padding-top: 5px;
+}
+
+.section4 li {
+    margin: 0;
+}
 
 /* Links and Buttons ============================ */
 .button {
