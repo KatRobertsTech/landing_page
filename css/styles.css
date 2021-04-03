@@ -34,7 +34,12 @@ a {
 .display-none-mobile {
     display: none;
 }
-
+h1 {
+    font-family: 'Domine', serif;
+    weight: 400;
+    font-size: 6rem;
+    letter-spacing: 0.2rem;
+}
 h2 {
     text-align: center;
     margin: 2rem 0;
@@ -63,7 +68,7 @@ span {
 
 /* Header ==================================== */
 header {
-    background-color: pink;
+    background-color: white;
     height: 100%;
     border-bottom: 10px solid #FFA9D2;
 }
@@ -120,7 +125,6 @@ nav a {
     text-decoration: none;
 }
 
-
 /* Main ==================================== */
         /* Hero ==================================== */
 .hero {
@@ -138,6 +142,11 @@ nav a {
     /* font-family: 'Open Sans', sans-serif; */
     color: white;
 
+}
+.hero h2{
+    margin-top: 0;
+    padding-top: 2rem;
+    margin-bottom: 3rem;
 }
 
 .hero .sign-up-form {
@@ -352,7 +361,66 @@ flex-ai-c {
 
 /* Media Queries =====================================*/
 @media only screen and (min-width: 640px) {
+    .cat, .sign-up-form, .categories, .how-it-works, .footer {
+        padding: 0 5.625rem;
+    }
 
+    .menu {
+        display: none;
+    }
+    .menu-items ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu-items li {
+        display: inline-block;
+        font-size: 1.375rem;
+    }
+
+    .menu-items {
+        display: inline-block;
+        width: 50%;
+        padding: 0 15px;
+    }
+    .logo {
+        width: auto;
+    }
+    .cat .display-none-mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .img-logo {
+        width: 6.25rem;
+        margin: 0 0.625rem;
+    }
+    .form-explanation {
+
+    }
+    .sign-up-form .display-none-mobile {
+        display: inline-block;
+    }
+    form {
+        display: flex;
+        flex-direction: row;
+        padding: 2rem 0 3.5rem 0;
+    }
+    form .button {
+        margin: 0 0 0 3.5rem;
+        height: 2.75rem;
+
+    }
+    form input {
+        height: 2.75rem;
+    }
+    .sign-up-form p {
+        padding-top: 0;
+    }
+
+    p .display-none-mobile {
+        padding-top: 50px;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
