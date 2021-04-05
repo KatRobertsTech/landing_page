@@ -176,6 +176,9 @@ form .button {
     background-color: #7BFFD0;
     border: 1px solid  #7BFFD0;
 }
+.submit {
+    border: none;
+}
             /* Categories ==================================== */
 .categories{
     background-color: #FFDA7B;
@@ -230,10 +233,9 @@ video {
     background-color: white;
 }            
 
-.form2 input {
+.form2 input[type="email"] {
     border: 1px solid black;
 }
-
 
 /* Footer test ==================================== */
 footer {
