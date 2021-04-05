@@ -179,6 +179,9 @@ form .button {
 .submit {
     border: none;
 }
+.cat-option img:hover {
+    border: 8px solid red;
+}
             /* Categories ==================================== */
 .categories{
     background-color: #FFDA7B;
@@ -241,6 +244,7 @@ video {
 footer {
     border-top: 10px solid #FFA9D2;
     background-color: white;
+    padding-bottom: 10px;
 }
 footer a {
     color: black;
@@ -327,7 +331,7 @@ footer ul {
     line-height: 24px;
     letter-spacing: 0.15px;
     text-transform: uppercase;
-    border: 1px solid yellow;
+    border: 1px solid white;
     padding: 5px 15px;
     background-color: white;
     color: black;
@@ -341,6 +345,18 @@ footer ul {
 .button-div {
     margin-bottom: 3.75rem;
 }
+
+.menu-items a:hover, footer a:hover {
+    border-bottom: 8px solid red;
+}
+.button:hover {
+    background-color: #5af8c1;
+}
+
+/* a.button:hover {
+    background-color: #7BFFD0;
+    border: #7BFFD0;
+} */
 /* Containers & Columns ==================================== */
 
 
