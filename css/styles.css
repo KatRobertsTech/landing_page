@@ -24,7 +24,7 @@ body {
     line-height: 1.4rem;
 }
 a {
-    color: white;
+    color: black;
 }
 
 .cat, .sign-up-form,.categories, .how-it-works, .footer {
@@ -131,8 +131,8 @@ nav a {
     /* background-image: url("../img/jorge-aguilar-600px-unsplash.jpg"); */
     background:
     linear-gradient(
-        rgba(24, 28, 69, 0.5),
-        rgba(24, 28, 69, 0.5)
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
     ),
     url("../img/jorge-aguilar-600px-unsplash.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -343,7 +343,32 @@ footer ul {
     justify-content: center;
 }
 .button-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     margin-bottom: 3.75rem;
+}
+
+.find-out-more-div {
+    width: 200px;
+    height:44px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a.find-out-more {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+}
+.find-out-more-div:hover {
+    background-color: #7BFFD0;
 }
 
 .menu-items a:hover, footer a:hover {
@@ -351,12 +376,9 @@ footer ul {
 }
 .button:hover {
     background-color: #5af8c1;
+    
 }
 
-/* a.button:hover {
-    background-color: #7BFFD0;
-    border: #7BFFD0;
-} */
 /* Containers & Columns ==================================== */
 
 
