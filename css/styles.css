@@ -23,6 +23,9 @@ body {
     background-color: yellow;
     line-height: 1.4rem;
 }
+main {
+    width: 100%;
+}
 a {
     color: black;
 }
@@ -487,9 +490,6 @@ flex-ai-c {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    main {
-        width: 100%;
     }
 
     .cat-flex-cont {
