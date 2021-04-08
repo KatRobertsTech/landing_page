@@ -488,6 +488,10 @@ flex-ai-c {
         flex-direction: column;
         align-items: center;
     }
+    main {
+        width: 100%;
+    }
+
     .cat-flex-cont {
         flex-wrap: nowrap;
     }
