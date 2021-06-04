@@ -25,6 +25,7 @@ body {
 }
 main {
     width: 100%;
+
 }
 a {
     color: black;
@@ -67,6 +68,10 @@ span {
     font-family: 'Roboto', sans-serif;
     font-size: 1.188rem;
     font-weight: 700;
+}
+
+main {
+    padding-top: 5.75rem;
 }
 
 /* Header ==================================== */
@@ -477,6 +482,10 @@ flex-ai-c {
         padding-top: 50px;
     }
 
+    main {
+        padding-top: 5.25rem;
+    }
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -484,6 +493,9 @@ flex-ai-c {
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
+    }
+    main {
+        padding-top: 5.25rem;
     }
 }
 
